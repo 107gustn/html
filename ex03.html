@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- form태그를 통해 다른 페이지로 값 전송 -->
+	<form action="https://www.naver.com" method="post"><!-- submit버튼을 통해 값을 전송하고자 하는 연결 위치 명시 -->
+	<!-- method: 데이터 전송 방식(get: url 경로에 값이 보이게 전송, post: url 경로에 값을 숨겨서 전송) --><!-- 용량이 큰 값은 post방식을 이용한다. -->
+		<input type="text" name="n" placeholder="input name"><br><!-- name: 사용자가 입력한 값을 action에 명시되어진 경로로 전송할때 사용하는 변수 -->
+		<input type="text" name="a" placeholder="input addr"><br><!-- name 변수에 값이 저장되어 전송됨 -->
+		<input type="submit" value="서브밋"><!-- form태그 안에 있는 input 값을 또 다른 위치로 전송 -->
+		<input type="reset" value="초기화"><!-- form태그 안에 있는 input 값을 전부 초기화 -->
+		<input type="button" value="버튼"><!-- JavaScript 문법과 같이 사용 -->
+	</form>
+	
+	<hr>
+	<!-- 체크박스 -->
+	책읽기<input type="checkbox">
+	운동<input type="checkbox">
+	게임<input type="checkbox">
+
+	<hr>
+	<!-- 라디오버튼 -->
+	10대<input type="radio" name="age" checked><!-- name 값이 동일하면 하나만 선택이 가능해진다. --><!-- checked: 실행되자마자 해당값이 선택된다. -->
+	20대<input type="radio" name="age">
+	30대<input type="radio" name="age">
+	
+	<hr>
+	<!-- 사용자로부터 입력을 받음 -->
+	<input type="button" value="버튼"><br><!-- value: 해당 태그에 내용을 추가해줌 -->
+	<input type="submit" value="서브밋"><br>
+	<input type="reset" value="초기화"><br>
+	<input type="text" value="내용"><br>
+	<input type="password" value="비밀번호"><br>
+	<input type="radio"><br>
+	<input type="checkbox"><br>
+	<input type="date"><br>
+</body>
+</html>

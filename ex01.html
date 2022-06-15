@@ -1,0 +1,86 @@
+<!-- 웹에서 번역 가능한 언어 -->
+<!-- 웹브라우저: 해당하는 내용을 번역해서 웹에 보여줌. -->
+<!-- < : tag -->
+<!-- / : 닫힌 tag -->
+<!DOCTYPE html><!-- html5 버전으로 작성 -->
+<html><!-- html 시작 -->
+<head><!-- css, 제목, 설정값 부여해주면 설정값 처리 -->
+<meta charset="UTF-8"> <!-- UTF8: 한글 처리 -->
+<title>Insert title here</title>
+</head>
+<!--
+속성(text): 해당태그에 옵션부여 가능
+<body text = "white" bgcolor="black"> 
+-->
+<body><!-- 내용 -->
+	<!-- 주석 -->
+	<!-- 아무내용 -->
+	
+	<!-- 테이블 병합 -->
+	<table border="1">
+		<tr>
+			<th colspan ="2">1</th> <th>1</th><!-- colspan: 행 병합 - 자기 자신을 기준으로 오른쪽으로 합침 -->
+		</tr>
+		<tr>
+			<th rowspan="2">1111</th> <th>1111</th> <th>1111</th><!-- rowspan: 열병합 - 자기 자신을 기준으로 아래쪽으로 합침 -->
+		</tr>
+		<tr>
+			<td>1</td> <td>1</td>
+		</tr>
+	</table>
+	
+	<!-- 테이블 -->
+	<table border="1"><!-- border: 테두리 선 굵기 -->
+		<tr><!-- tr: 하나의 행 -->
+			<th>1</th> <th>1</th> <th>1</th><!-- th: 열 - 가운데 정렬 되면서 굵은글씨-->
+		</tr>
+		<tr>
+			<th>1111</th> <th>1111</th> <th>1111</th>
+		</tr>
+		<tr>
+			<td align="center"><b>1</b></td><!-- align(속성값): center - 가운데 정렬 -->
+			<td>1</td> <td>1</td><!-- 왼쪽정렬 되면서 얇은 글씨 -->
+		</tr>
+	</table>
+	
+	<hr>
+	<!-- 공백은 여러칸 사용하면 한칸만 인식 -->
+	안 &nbsp; &nbsp; &nbsp; 녕
+	&lt; 안녕 &gt;		하
+	&copy;
+	
+	<hr>
+	<b>굵은글씨</b><i>기울임</i>
+	<sup>위첨자</sup>
+	
+	<hr>
+	<!-- 인라인 방식: 글자 크기만큼의 영역을 가짐 -->
+	<!-- font크기 --> 
+	<font size = "7">글자 크기 7</font>
+	<font size = "6">글자 크기 6</font>
+	<font size = "5">글자 크기 5</font>
+	<font size = "4" style="background-color: red;">글자 크기 4</font>
+	<font size = "3">글자 크기 3</font>
+	<font size = "2">글자 크기 2</font>
+	<font size = "1">글자 크기 1</font>
+	
+	<hr>
+	<!-- 블럭 방식: 처음부터 끝까지 영역을 가짐 -->
+	<!-- h1~h3 : 제목위주, h4~h6 : 내용 -->
+	<h1 style="background-color: red;">문서의 주제목</h1>
+	<h2>문서의 주제목 또는 부제목</h2>
+	<h3>문서의 부제목 또는 내용</h3>
+	<h4>문서의 내용</h4>
+	<h5>문서의 내용</h5>
+	<h6>문서의 내용</h6>
+	
+	<hr><!-- 가로구분선 -->
+	하<br>나<br>의<br> <!-- <br>: enter값 -->
+	내용
+	작성
+	<p>연습</p> <!-- <p>: 문장내에서 구분을 지을때 사용 -->
+	중
+	
+	
+</body>
+</html><!-- html 종료 -->
