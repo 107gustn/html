@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- head 사이에만 css가 들어갈 수 있다. -->
+<style type="text/css">
+	* { color: red; background-color: gray; font-size: 30px;} /* *: 전체선택자(현재 페이지에 어떠한 값이 들어와도 해당 스타일로 적용) */
+	h1 { color: yellow; background-color: aqua; } /* 태그명: 태그선택자(해당 태그에 대하여 스타일 적용) */
+	.c1 {color: purple; } /* .클래스: 클래스선택자(해당 클래스에 대하여 스타일 적용) */
+	h3.c3 {color: white; } /* h3태그에 있는 c3 클래스에 적용 */
+	.c4 { border: 10px dotted red; } /* border: 테두리 선*/
+	#id01 { background-color: orange; border-radius: 10px; } /* #: id선택자 */ /* border-radius: 모서리 처리 */
+	#id01 .c5 { text-align: right; }/* #id01에 종속되어있는 .c5에 대해서 적용 */
+</style>
+
+</head>
+<body>
+	<h3 class="c3 c4 c5" id="id01"> <!-- 공백을 이용하여 여러개 값 처리 -->
+		<p class="c5">하세요</p>
+	</h3>
+	<hr>
+	<b class="c1">안녕</b>
+	<hr>
+	<h1>전체 스타일</h1>
+	<p>p태그 적용</p>
+</body>
+</html>

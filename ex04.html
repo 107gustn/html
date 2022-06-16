@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	
+	<!-- 블럭단위: 처음부터 끝까지 영역을 차지 -->
+	<div style="background-color: gary;">aaaa</div><!-- div: 영역을 나누고자 할때 사용 -->
+	<div style="background-color: aqua;">aaaa</div>
+	<div style="background-color: olive;"><!-- 블럭단위 안에 인라인 단위 처리 -->
+		aaaa
+		<span style="background-color: orange;">111</span>
+		<span style="background-color: silver;">111</span>
+		<label style="background-color: teal;">111</label>
+	</div>
+	<!-- 인라인: 글자크기만큼 영역을 차지 -->
+	<span style="background-color: orange;">111</span>
+	<span style="background-color: silver;">111</span>
+	<label style="background-color: teal;">111</label>
+	
+	<hr>
+	<fieldset style="width: 300px;"><!-- 테두리 틀 생성 -->
+		<legend>취미 조사</legend><!-- 테두리 제목 -->
+			책<input type="checkbox"><!-- 테두리 목록 -->
+			운동<input type="checkbox">
+			게임<input type="checkbox">
+	</fieldset>
+	
+	<hr>
+	<!-- 웹 브라우저는 번역기인데, 각각의 브라우저마다 표현해주는 방식이 다르다. -->
+	<textarea rows="3" cols="50"></textarea><!-- 메모장형식 -->
+	
+	<hr>
+	<form action="#"><!-- #: 자기자신 -->
+		<input type="text" name="n" value="hello"><br><!-- value: 해당태그에 값을 직접적으로 표시 -->
+		10대<input type="radio" value="10" name="age"><br><!-- value: 값의 속성을 표시할 때 사용 -->
+		20대<input type="radio" value="20" name="age"><br>
+		30대<input type="radio" value="30" name="age"><br>
+		
+		<select size="1" name="se"><!-- 여러개중 하나 선택창 -->
+			<option value="1">사과
+			<option value="2">배
+			<option value="3">수박
+		</select>
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>
