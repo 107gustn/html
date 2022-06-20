@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+nav ul{ list-style: none; display: flex;
+ 		justify-content: flex-end;}
+ /* nav태그에 종속되어있는 ul에 설정 */ /* list-style: none; - . 표시 */ /* display: flex - 가로 배치 */ /* justify-content: flex-end; - 오른쪽 끝으로 보내줌 */
+nav ul li { /*background-color:  green;*/ /* li태그의 설정 */
+			 	   /* 위 오 아 왼쪽 */
+ 			 padding: 10px; /* padding: 안쪽으로 밀어냄 */ /* 0(위아래) 0(좌우) 2개만 사용, 0(위아래왼오) 1개만 사용 */
+ 			 margin: 0 3px; /* margin: 바깥으로 밀어냄 */
+ 			 }
+nav ul li a { text-decoration: none; color: white; }
+nav ul li a:hover { /* 마우스가 올라간 경우 */
+	color: orange;
+	padding-bottom: 3px; /* padding을 아래부분만 줌 */
+	border-bottom: 3px dotted white; /* 굵기, 선, 색 */
+	transition : all 0.25s;
+}
+div { background-color: blue; height: 100px;
+		overflow: hidden; /* 종속된 부모보다 틀의 크기가 커지면 오버된 부분이 가려진다. */
+	}
+div div { background-color: red; height: 200px; width:200px; }
+</style>
+
+</head>
+<body>
+	
+	<div>
+		hello
+		<div>
+			css
+		</div>
+	</div>
+	
+	<hr>
+	<!-- 네이게이션 -->
+	<nav style="background-color: black; ">
+		<ul><!-- ul: 세로로 배치해줌 -->
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BOARD</a></li>
+			<li><a href="#">MEMBER_SHIP</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

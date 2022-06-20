@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	.wrap {
+		width: 90%;
+		height: 200px;
+		border: 4px solid black;
+		margin: 0 auto; /* 현재 화면에 대해서 기본틀을 가운데로 정렬 */
+		text-align: center; /* 글자를 가운데 정렬 */
+		display: flex; flex-flow: column; /* 가로 배치 */
+	}
+	.wrap div { width: 33.3333%; }
+	.div1 { order:3; background-color: red; } /* order: 순서를 부여함 */
+	.div2 { display:flex; order:2; background-color: green; }
+	.div3 { order:1; background-color: aqua; }
+</style>
+
+</head>
+<body> <!-- div는 블록단위여서 가로로 다 차지한다 -->
+	<div class="wrap"> <!-- 기본틀은 wrap을 많이 사용한다. -->
+		<div class="div1"> <h1>1</h1> </div>
+		<div class="div2">
+		 	<h1 class="h1">1</h1>
+		 	<h1 class="h2">2</h1>
+		 	<h1 class="h3">3</h1>
+		  </div>
+		<div class="div3"> <h1>3</h1> </div>
+	</div>
+</body>
+</html>
